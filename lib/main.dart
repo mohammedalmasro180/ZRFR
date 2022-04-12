@@ -39,38 +39,10 @@ Future<void> main() async {
   HttpOverrides.global = MyHttpOverrides();
   runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AnimatedSplashScreen(
-        splashIconSize: 333,
-        duration: 3000,
-        splash: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset("img/logo.png"),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("مكتب النقل",style: TextStyle(fontSize: 22),),
-              )
-            ],
-          ),
-        ),
-        nextScreen:MyApp(),
-        splashTransition: SplashTransition.sizeTransition,
-        //pageTransitionType: PageTransitionType.scale,
-
+      home: MyApp(),
 
       ),
-    routes: {
-
-      '/message': (context) =>Message(),
-      //'/home': (context) =>HomeScreen(name: ,),
-  },
-  )
-
-  );
+   );
 }
 
 class MyHttpOverrides extends HttpOverrides{
