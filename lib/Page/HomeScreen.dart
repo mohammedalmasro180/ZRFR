@@ -3,7 +3,7 @@ import 'package:drive011221/Screens/Home/HomeScreen.dart';
 import 'package:drive011221/login.dart';
 import 'package:http/http.dart'as http;
 import 'package:flutter/material.dart';
-import 'package:carousel_pro/carousel_pro.dart';
+
 import 'package:drive011221/Widget/appbar.dart';
 import 'package:drive011221/Widget/drawer.dart';
 import 'package:drive011221/Widget/homecat.dart';
@@ -29,7 +29,6 @@ class _HomeScreeenState extends State<HomeScreeen> {
   loginchek() async {
     var response;
     var result;
-
 
 
 
@@ -77,28 +76,8 @@ class _HomeScreeenState extends State<HomeScreeen> {
             SizedBox(
               height: 350.0,
               width: double.infinity,
-              child: Carousel(
-                boxFit: BoxFit.cover,
-                autoplay: false,
-                animationCurve: Curves.fastOutSlowIn,
-                animationDuration: Duration(milliseconds: 1000),
-                dotSize: 6.0,
-                dotIncreasedColor: Color(0xFFFF335C),
-                dotBgColor: Colors.black,
-                dotPosition: DotPosition.bottomCenter,
-                dotVerticalPadding: 10.0,
-                showIndicator: true,
-                borderRadius: true,
-                radius: Radius.circular(0),
-                indicatorBgPadding: 7.0,
-                images: [
-                  NetworkImage('https://giveuselife.org/wp-content/uploads/2017/10/real-mobile-2x-1400x770.png'),
-                  NetworkImage('https://images.indianexpress.com/2020/09/Nokia-newlaunches.jpg'),
-                  NetworkImage('https://giveuselife.org/wp-content/uploads/2017/10/real-mobile-2x-1400x770.png'),
-                  NetworkImage('https://images.indianexpress.com/2020/09/Nokia-newlaunches.jpg'),
-
-                ],
-              ),
+              child:
+              Image.network('https://giveuselife.org/wp-content/uploads/2017/10/real-mobile-2x-1400x770.png'),
             ),
             Container(
               padding: EdgeInsets.all(10),

@@ -57,13 +57,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-  carousel_pro:
-    dependency: "direct dev"
-    description:
-      name: carousel_pro
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   change_app_package_name:
     dependency: "direct dev"
     description:
